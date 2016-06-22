@@ -13,7 +13,7 @@ class Pet
   end
   
   def save()
-    sql = "INSERT INTO pets (name, type, pet_id) VALUES ('#{@name}', #{@type}, '#{@store_id}') RETURNING *"
+    sql = "INSERT INTO pets (name, type, store_id) VALUES ('#{@name}', '#{@type}', '#{@store_id}') RETURNING *"
     @runner.run(sql)
   end  
 

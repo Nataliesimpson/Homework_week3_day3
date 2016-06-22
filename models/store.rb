@@ -14,7 +14,7 @@ class Store
   end
 
   def save()
-    sql = "INSERT INTO pets (name, address, stock_type) VALUES ('#{@name}', '#{address}', #{stock_type}) RETURNING *"
+    sql = "INSERT INTO stores (name, address, stock_type) VALUES ('#{@name}', '#{@address}', '#{@stock_type}') RETURNING *"
     store_data = @runner.run(sql)
     @id = store_data.first['id'].to_i
   end  
