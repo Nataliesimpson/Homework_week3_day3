@@ -11,13 +11,13 @@ store2 = Store.new( {'name' => 'City Pets', 'address' => 'City High Street', 'st
 store1.save()
 store2.save()
 
-pet1 = Pet.new( {'name' => 'Mudgee', 'type' => 'lowrider', 'pet_id' => pet.id}, runner)
-pet2 = Pet.new( {'name' => 'Perez', 'type' => 'parrot', 'pet_id' => pet.id}, runner)
+pet1 = Pet.new( {'name' => 'Mudgee', 'type' => 'lowrider', 'store_id' => store1.id}, runner)
+pet2 = Pet.new( {'name' => 'Perez', 'type' => 'parrot', 'store_id' => store2.id}, runner)
 
 pet1.save()
 pet2.save()
 
 
 
-# binding.pry
-# nil
+binding.pry
+nil
