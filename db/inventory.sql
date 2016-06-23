@@ -14,3 +14,6 @@ CREATE TABLE pets (
   type VARCHAR(255),
   store_id int4 references stores(id)
 );
+
+
+#store_id links the 2 tables - most important bit

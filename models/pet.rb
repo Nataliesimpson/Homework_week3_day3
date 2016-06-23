@@ -1,3 +1,4 @@
+require_relative('./models/store')
 require( 'pg' )
 
 class Pet
@@ -15,6 +16,8 @@ class Pet
   def save()
     sql = "INSERT INTO pets (name, type, store_id) VALUES ('#{@name}', '#{@type}', '#{@store_id}') RETURNING *"
     @runner.run(sql)
+    pet_data = @runner.run(sql)
+    @id = pet_data.first['id'].to_i
   end  
 
   def store()

@@ -1,3 +1,4 @@
+require_relative('./models/pet')
 require( 'pg' )
 require( 'pry-byebug' )
 
@@ -26,6 +27,6 @@ class Store
     return pets_array
   end  
 
-  
+
 
 end  

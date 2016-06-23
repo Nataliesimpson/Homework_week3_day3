@@ -17,8 +17,8 @@ store4.save()
 
 pet1 = Pet.new( {'name' => 'Mudgee', 'type' => 'lowrider', 'store_id' => store1.id}, runner)
 pet2 = Pet.new( {'name' => 'Perez', 'type' => 'parrot', 'store_id' => store2.id}, runner)
-pet3 = Pet.new( {'name' => 'Twinkle', 'type' => 'cat', 'store_id' => store2.id}, runner)
-pet4 = Pet.new( {'name' => 'Larry', 'type' => 'lizard', 'store_id' => store2.id}, runner)
+pet3 = Pet.new( {'name' => 'Twinkle', 'type' => 'cat', 'store_id' => store3.id}, runner)
+pet4 = Pet.new( {'name' => 'Larry', 'type' => 'lizard', 'store_id' => store4.id}, runner)
 
 pet1.save()
 pet2.save()
